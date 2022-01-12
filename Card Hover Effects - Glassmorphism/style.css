@@ -54,7 +54,7 @@ body {
 	backdrop-filter: blur(4px);
 	box-shadow: inset 2px 2px 0px 0px rgba(255, 255, 255, 0.275),
 							20px 20px 20px rgba(0, 0, 0, 0.4);
-	transition: 0.3s;
+	transition: 1s;
 }
 
 .c-card__title {

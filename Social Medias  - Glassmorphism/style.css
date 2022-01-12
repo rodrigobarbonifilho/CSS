@@ -10,6 +10,7 @@ body {
                     radial-gradient(circle at bottom left, rgb(246, 255, 73), transparent, transparent),
                     radial-gradient(circle at bottom right, rgb(74, 168, 255), transparent, transparent);
   height: 100vh;
+  overflow: hidden;
 }
 
 .glass {

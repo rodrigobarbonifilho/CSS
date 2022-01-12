@@ -1,11 +1,15 @@
-const cards = document.querySelectorAll(".c-card");
-
-cards[0].addEventListener(onmousemove, getMousePos);
+const card = document.getElementById("card1");
 
 function getMousePos() {
-    let pos = window.event;
-    let posX = pos.clientX;
-    let posY = pos.clientY;
+    window.addEventListener("mousemove", (e) => {
+        let event = e.
+    })
+}
 
-    console.log(`X: ${posX}| Y: ${posY}`)
+function rotateCard() {
+    card.style.transform = "rotate3d(1, 1, 0, 30deg)";
+}
+
+function backToOriginalState() {
+    card.style.transform = "rotate3d(0, 0, 0, 0deg)";
 }

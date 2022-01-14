@@ -1,8 +1,9 @@
 let control = true;
-const menu = document.querySelector(".div-menu-interaction");
+const menus = document.querySelectorAll(".menu");
 
-menu.addEventListener("click", () => {
-    menu.classList.toggle("close", !control);
-    menu.classList.toggle("open", control);
-    control = !control;
-})
+menus.forEach(menu => {
+    menu.addEventListener("click", () => {
+        menu.classList.toggle("close");
+        menu.classList.toggle("open");
+    });
+});

@@ -19,6 +19,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 20px;
 	height: 100vh;
 	background-color: var(--black-not-very-black);
 	overflow: hidden;
@@ -55,4 +56,108 @@ body {
 
 .div-profile__description {
 	text-align: left;
+}
+
+.menu {
+	height: 150px;
+	background-color: white;
+	border-radius: 20px;
+	transition: 0.5s;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.menu.close {
+	width: 100px;
+}
+
+.menu.open {
+	width: 450px;
+}
+
+.menu.close .dots {
+	flex-direction: column;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	height: 100%;
+	transition: 1s;
+}
+
+.dots div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background-color: var(--black-not-very-black);
+	transition: 0.5s;
+}
+
+.menu.open .dots {
+	transform: rotateZ(360deg);
+}
+
+.menu.open .dots div {
+	border: 8px solid var(--black-not-very-black);
+	animation: bigingDots 0.5s forwards;
+	animation-timing-function: linear;
+}
+
+.menu.close .dots div {
+	animation: smallingDots 0.5s forwards;
+	animation-timing-function: linear;
+}
+
+.menu.open ion-icon {
+	color: white;
+	font-size: 3em;
+	--ionicon-stroke-width: 32px;
+	transition: 0.3s;
+}
+
+.menu.open .dots div:hover {
+	background-color: greenyellow;
+}
+
+.menu.open .dots div:hover ion-icon {
+	color: var(--black-not-very-black);
+	animation: animateIconWhenHover 0.5s;
+}
+
+@keyframes bigingDots {
+	0% {
+		width: 20px;
+		height: 20px;
+	}
+	100% {
+		width: 120px;
+		height: 120px;
+	}
+}
+
+@keyframes smallingDots {
+	0% {
+		width: 120px;
+		height: 120px;
+	}
+	100% {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@keyframes animateIconWhenHover {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-15px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }

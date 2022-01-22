@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+:root {
+	--gray-not-too-gray: #3c3c3c;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:monospace;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--gray-not-too-gray);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.display {
+	text-align: right;
+	font-size: 30px;
+	width: 10em;
+	padding: 25px 10px;
+	border-radius: 10px;
+	background-color: rgb(157, 179, 124);
+	color: white;
+}
+
+.keys {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	gap: 1em 1em;
+}
+
+.key {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right, var(--gray-not-too-gray), rgb(94, 94, 94) 140%);
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	color: white;
+	border-radius: 5px;
+}
+
+#erase {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}

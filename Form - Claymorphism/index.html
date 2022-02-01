@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário com Claymorphism</title>
+</head>
+<body>
+  <form action="" method="post" class="form--login claymorphism">
+    <h1 class="form__title">LOG IN</h1>
+    <div class="input-field">
+      <label for="nome" class="label-form">Username</label>
+      <div class="icon-wrapper claymorphism"><ion-icon name="person-outline"></ion-icon></div>
+      <input class="input-form claymorphism" type="text" name="nome" id="nome">
+    </div>
+    <div class="input-field">
+      <label for="senha" class="label-form">Password</label>
+      <div class="icon-wrapper claymorphism"><ion-icon name="lock-closed-outline"></ion-icon></div>
+      <input class="input-form claymorphism" type="password" name="senha" id="senha">
+    </div>
+    <div class="check-field">
+      <input type="checkbox" name="remember" id="remember">
+      <label for="remember" class="label-form">REMEMBER ME</label>
+    </div>
+    <input type="submit" value="LOG IN" class="button claymorphism">
+    <a href="http://">FORGET PASSWORD</a>
+  </form>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

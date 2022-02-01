@@ -6,6 +6,12 @@
 	--display-color: #a8ad7e;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
 html {
 	font-family: monospace;
 	overflow-y: hidden;
@@ -30,12 +36,17 @@ body {
 .display {
 	font-size: 3em;
 	text-align: right;
+	display: flex;
+	justify-content: end;
+	align-items: center;
 	width: 350px;
+	height: 90px;
 	margin: 10px auto;
-	padding: 25px 5px;
+	padding: 0px 5px;
 	border: 1px solid black;
 	border-radius: 10px;
 	background-color: var(--display-color);
+	overflow: hidden;
 }
 
 .keyboard {
@@ -47,7 +58,7 @@ body {
 	height: 400px;
 }
 
-.key-wrapper {
+.key {
 	position: relative;
 	font-size: 2em;
 	display: flex;
@@ -58,16 +69,31 @@ body {
 	border: 2px solid black;
 	border-radius: 10px;
 	color: white;
-	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4), inset 3px -8px 8px 0px rgb(55, 55, 55);
+	box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.4), inset 3px -8px 8px 0px rgb(55, 55, 55), inset 0px 0px 8px 3px rgb(0, 0, 0);
 	cursor: pointer;
+	user-select: none;
 	z-index: 1;
+	transition: 0.5s;
 }
 
-.key-wrapper > span {
+.key > span {
 	z-index: 2;
 }
 
-#erase {
+.key::after {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	content: '';
+	width: 80%;
+	height: 80%;
+	border-radius: 5px;
+	background-image: linear-gradient(to left, rgba(255, 255, 255, 0.083), .333);
+	box-shadow: inset -0.5px -0.5px 3px 0px rgba(158, 121, 121, 0.549),
+							inset 0.5px 0.5px 3px 0px rgb(12, 12, 12);
+}
+
+.erase {
 	background-color: red;
 	grid-column-start: 1;
 	grid-column-end: 3;
@@ -75,15 +101,36 @@ body {
 	box-shadow: inset 0px 0px 8px 3px rgb(193, 0, 0);
 }
 
-#erase::after {
+.erase::after {
 	position: absolute;
 	top: 2px;
 	left: 3px;
 	content: '';
 	width: 90%;
 	height: 80%;
-	border-radius: 5px;
-	background-image: linear-gradient(to left, rgba(255, 255, 255, 0.295), rgb(209, 0, 0));
-	box-shadow: inset -0.5px -0.5px 3px 0px rgba(255, 255, 255, 0.5),
-							inset 0.5px 0.5px 3px 0px rgba(0, 0, 0, 0.371);
+	background-image: linear-gradient(to left, rgba(255, 255, 255, 0.378), rgb(209, 0, 0));
+	box-shadow: inset -0.5px -0.5px 3px 0px rgba(255, 255, 255, 0.583),
+							inset 0.5px 0.5px 3px 0px rgb(0, 0, 0);
+}
+
+.plus {
+	grid-column-start: 4;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+.plus::after {
+	content: '';
+	height: 85%;
+}
+
+.equal {
+	background-image: linear-gradient(to left, rgb(55, 61, 255), rgb(0, 89, 255));
+	box-shadow: inset -0.5px -0.5px 3px 0px rgba(5, 0, 145, 0.741),
+							inset 0.5px 0.5px 3px 0px rgb(60, 58, 226);
+}
+
+.equal::after {
+	content: '';
+	background-image: linear-gradient(to left, rgba(125, 129, 255, 0.685), rgb(0, 73, 209));
 }

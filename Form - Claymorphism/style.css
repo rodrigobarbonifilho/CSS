@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-	--background-color: #313641;
+	--form-color: #313641;
+	--icon-color: #FF3A7E;
 }
 
 * {
@@ -22,43 +23,106 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background-color: var(--background-color);
+	background-color: var(--form-color);
 }
 
-.claymorphism {
-	border-radius: 15px;
-	box-shadow: inset -4px -4px 8px 0px rgb(48, 53, 64),
-							inset 4px 4px 8px 0px rgba(255, 255, 255, 0.303);
-}
-
-.form--login {
-	padding: 40px 20px;
-	color: white;
-	background-color: var(--background-color);
-	box-shadow: 10px 10px 32px 30px rgba(0, 0, 0, 0.268);
-}
-
-.form__title {
-	text-align: center;
-}
-
-.input-field {
+.log-in-form-wrapper {
 	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr;
-	margin: 20px 0px;
+	grid-template-rows: 160px repeat(2, 1.8fr) 0.6fr 1.3fr 1fr;
+	width: 500px;
+	height: 600px;
+	padding: 0px 52px;
+	border-radius: 20px;
+	background-color: var(--form-color);
+	box-shadow: inset 4px 4px 16px 0px rgba(255, 253, 253, 0.14),
+							inset -4px -4px 16px 0px rgba(0, 0, 0, 0.31);
+	color: white;
+}
+
+.log-in-form-wrapper > h1 {
+	font-size: 3em;
+	text-align: center;
+	align-self: center;
+}
+
+.input-area {
+	display: grid;
+	grid-template-rows: 1em 1fr;
+	row-gap: 10px;
+	align-self: center;
+	
+}
+
+.input-area > h3 {
+	position: relative;
+	font-size: 1.2em;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.input-area > h3::before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 1em;
+	width: 4px;
+	background-color: white;
+}
+
+.input-wrapper {
+	display: flex;
 }
 
 .icon-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	grid-row-start: 2;
-	width: 30px;
-	height: 30px;
-	background-color: #FF2C77;
+	width: 70px;
+	height: 64px;
+	border-radius: 40px;
+	box-shadow: 4px 4px 32px 0px black,
+							inset -4px -4px 16px 0px #750028,
+							inset 4px 4px 16px 0px rgba(255, 255, 255, 0.494);
+	background-color: var(--icon-color);
 }
 
-.input-form {
-	grid-row-start: 2;
+.icon-wrapper > ion-icon {
+	font-size: 2em;
+}
+
+.input-wrapper > input {
+	width: 90%;
+	height: 4.8em;
+	outline: none;
+	border: none;
+	border-radius: 30px;
+	margin-left: 20px;
+	box-shadow: 4px 4px 32px 0px black,
+							inset -4px -4px 16px 0px gray;
+}
+
+.remember-me-wrapper {
+	align-self: center;
+	font-weight: bold;
+}
+
+.button-log-in {
+	height: 70px;
+	font-size: 1.5em;
+	font-weight: bold;
+	border: none;
+	border-radius: 30px;
+	box-shadow: 4px 4px 16px 0px black,
+							inset 4px 4px 16px 0px rgba(255, 255, 255, 0.323),
+							inset -4px -4px 16px 0px #124B8D;
+	background-color: #1D78E0;
+	color: white;
+}
+
+.link {
+	font-weight: bold;
+	align-self: baseline;
+	color: white;
+	text-decoration: none;
 }

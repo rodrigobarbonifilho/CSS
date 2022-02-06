@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Formulário com Claymorphism</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Formulário - Claymorphism</title>
 </head>
 <body>
-  <form action="" method="post" class="form--login claymorphism">
-    <h1 class="form__title">LOG IN</h1>
-    <div class="input-field">
-      <label for="nome" class="label-form">Username</label>
-      <div class="icon-wrapper claymorphism"><ion-icon name="person-outline"></ion-icon></div>
-      <input class="input-form claymorphism" type="text" name="nome" id="nome">
-    </div>
-    <div class="input-field">
-      <label for="senha" class="label-form">Password</label>
-      <div class="icon-wrapper claymorphism"><ion-icon name="lock-closed-outline"></ion-icon></div>
-      <input class="input-form claymorphism" type="password" name="senha" id="senha">
-    </div>
-    <div class="check-field">
-      <input type="checkbox" name="remember" id="remember">
-      <label for="remember" class="label-form">REMEMBER ME</label>
-    </div>
-    <input type="submit" value="LOG IN" class="button claymorphism">
-    <a href="http://">FORGET PASSWORD</a>
-  </form>
+	<div class="log-in-form-wrapper">
+		<h1>LOG IN</h1>
+		<div class="input-area">
+			<h3>USERNAME</h3>
+			<div class="input-wrapper">
+				<div class="icon-wrapper">
+					<ion-icon name="person-sharp"></ion-icon>
+				</div>
+				<input type="text" name="username" id="username">
+			</div>
+		</div>
+		<div class="input-area">
+			<div class="input-area">
+				<h3>PASSWORD</h3>
+				<div class="input-wrapper">
+					<div class="icon-wrapper">
+						<ion-icon name="lock-closed-sharp"></ion-icon>
+					</div>
+					<input type="text" name="passord" id="password">
+				</div>
+			</div>
+		</div>
+		<div class="remember-me-wrapper">
+			<input type="checkbox" name="remember-me" id="remember-me">
+			<label for="remember-me">REMEMBER-ME</label>
+		</div>
+		<input type="button" value="LOG IN" class="button-log-in">
+		<a href="#" class="link">FORGET PASSWORD</a>
+	</div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

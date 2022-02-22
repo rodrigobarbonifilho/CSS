@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* ================================== */
+/*                Fonts               */
+/* ================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ================================== */
+/*              Variables             */
+/* ================================== */
+:root {
+    --background-color: #25273a;
+    --contrast: #ffffff8e;
+}
+
+
+/* ================================== */
+/*               Globals              */
+/* ================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.text {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 4em;
+    color: var(--background-color);
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.658);
+    transition: 0.5s;
+    z-index: 20;
+}
+
+.text-container {
+    position: relative;
+    z-index: 100;
+}
+
+.text-container::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 4em;
+    top: 6px;
+    left: -15px;
+    background-color: purple;
+    transition: 1s;
+}
+
+.text-container:hover::before {
+    left: calc(100% + 5px);
+}
+
+.text-container:hover .text {
+    animation: text-effect 1s normal
+}
+
+@keyframes text-effect {
+    
+}

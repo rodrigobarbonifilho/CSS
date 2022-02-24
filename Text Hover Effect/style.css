@@ -9,8 +9,8 @@
 /*              Variables             */
 /* ================================== */
 :root {
-    --background-color: #25273a;
-    --contrast: #ffffff8e;
+  --background-color: #25273a;
+  --contrast: #ffffff8e;
 }
 
 
@@ -18,58 +18,82 @@
 /*               Globals              */
 /* ================================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    overflow: hidden;
+  font-size: 62.5%;
+  overflow: hidden;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--background-color);
+}
+
+.container-text-container {
+  position: relative;
+}
+
+.text-container:before {
+  position: absolute;
+  content: '';
+  width: 1rem;
+  height: 85%;
+  top: 0.7rem;
+  left: -1.5rem;
+  background-color: purple;
 }
 
 .text {
-    position: relative;
-    font-family: "Roboto", sans-serif;
-    font-weight: bolder;
-    font-size: 4em;
-    color: var(--background-color);
-    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.658);
-    transition: 0.5s;
-    z-index: 20;
+  font-weight: bold;
+  font-size: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: var(--background-color);
+  -webkit-text-stroke: 0.1rem rgba(255, 255, 255, 0.5);
+  cursor: default;
 }
 
-.text-container {
-    position: relative;
-    z-index: 100;
+.text:before {
+  position: absolute;
+  content: attr(data-text);
+  width: 0;
+  color: purple;
+  overflow: hidden;
 }
 
-.text-container::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 4em;
-    top: 6px;
-    left: -15px;
-    background-color: purple;
-    transition: 1s;
+.text:hover {
+  text-shadow: 0px 0px 20px rgb(255, 0, 255);
+  transition: 1s;
+  -webkit-text-stroke: 1px rgb(255, 0, 255);
 }
 
-.text-container:hover::before {
-    left: calc(100% + 5px);
+.text:hover:before {
+  width: 100%;
+  transition: 1.5s ease-in;
 }
 
-.text-container:hover .text {
-    animation: text-effect 1s normal
+.text:not(:hover):before {
+  width: 0;
+  transition: 1.5s ease-out;
 }
 
-@keyframes text-effect {
-    
+.text-container:hover:before {
+  left: calc(100% + 10px);
+  transition: 1.5s ease-in;
+}
+
+.text-container:not(:hover):before {
+  left: -15px;
+  transition: 1.5s ease-out
 }

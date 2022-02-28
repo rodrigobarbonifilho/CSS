@@ -9,17 +9,52 @@
 	<title>Sidebar</title>
 </head>
 <body>
-  <div class="sidebar sidebar--closed">
+  <div class="sidebar">
 		<div class="sidebar__button-container">
 			<div class="sidebar__button">
-				<span></span>
-				<span></span>
-				<span></span>
+				<span class="sidebar__button__span"></span>
+				<span class="sidebar__button__span"></span>
+				<span class="sidebar__button__span"></span>
 			</div>
 		</div>
 		<div class="separator"></div>
-		<div class="sidebar__icons-container"></div>
+		<nav class="sidebar__nav">
+				<ul class="sidebar__nav__list">
+					<li class="nav__list__li">
+						<a href="#" class="nav__list__li__a">
+							<ion-icon name="home-outline" class="icon"></ion-icon>
+							<p class="a_text">home</p>
+						</a>
+					</li>
+					<li class="nav__list__li">
+						<a href="#" class="nav__list__li__a">
+							<ion-icon name="person-outline"></ion-icon>
+							<p class="a_text">about</p>
+						</a>
+					</li>
+					<li class="nav__list__li">
+						<a href="#" class="nav__list__li__a">
+							<ion-icon name="chatbubble-outline"></ion-icon>
+							<p class="a_text">messages</p>
+						</a>
+					</li>
+					<li class="nav__list__li">
+						<a href="#" class="nav__list__li__a">
+							<ion-icon name="camera-outline"></ion-icon>
+							<p class="a_text">photos</p>
+						</a>
+					</li>
+					<li class="nav__list__li">
+						<a href="#" class="nav__list__li__a">
+							<ion-icon name="settings-outline"></ion-icon>
+							<p class="a_text">settings</p>
+						</a>
+					</li>
+				</ul>
+		</nav>
 	</div>
 </body>
 <script src="open_sidebar.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>

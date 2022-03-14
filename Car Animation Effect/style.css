@@ -1,0 +1,47 @@
+/* GLOBAL */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #EEEDEF;
+}
+
+/* STREET */
+#street {
+	position: absolute;
+	width: 120rem;
+	height: 35rem;
+	background-color: #343334;
+	border-top-left-radius: 100px;
+	border-radius: 140px;
+}
+
+/* CENTER LINE */
+#street .center-line-container div {
+	position: relative;
+	width: 10%;
+	height: 5px;
+	background-color: #EEEDEF;
+}
+
+#street .center-line-container div:nth-child(1n) {
+	top: calc(50% - 5px);
+	left: calc(200px);
+}

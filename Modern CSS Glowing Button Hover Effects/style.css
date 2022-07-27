@@ -50,39 +50,37 @@ ul li button:hover {
 ul li button::before {
 	position: absolute;
 	content: "";
-	bottom: 0;
-	left: 0;
+	bottom: -18.5%;
+	left: -5.5%;
 	width: 30px;
 	height: 30px;
 	background-color: var(--bg-color);
 	border: 5px solid var(--clr);
 	transform-origin: center;
-	transform: rotateZ(45deg) translateX(0%);
 	transition: 0.3s;
 }
 
 ul li button::after {
 	position: absolute;
 	content: "";
-	top: 0;
-	right: 0;
+	top: -18.5%;
+	right: -5.5%;
 	width: 30px;
 	height: 30px;
 	background-color: var(--bg-color);
 	border: 5px solid var(--clr);
-	transform: translate(50%, -50%);
 	transform-origin: center;
 	transition: 0.3s;
 }
 
 ul li button:hover::before {
-	left: 100%;
-	box-shadow: 0 -117px 0  var(--clr);
+	left: 95.5%;
+	box-shadow: -85px -87px 0 var(--clr);
 	transform: rotateZ(45deg);
 }
 
 ul li button:hover::after {
-	right: 100%;
-	box-shadow: 0 117px 0 0  var(--clr);
+	right: 95.5%;
+	box-shadow: 85px 87px 0 0  var(--clr);
 	transform: rotateZ(45deg);
 }

@@ -4,6 +4,7 @@
 
 :root {
 	--bg-color: #28292E;
+	--blue: ;
 }
 
 * {
@@ -39,12 +40,14 @@ ul li button {
 	border: 5px solid #39393F;
 	color: white;
 	transition: 0.3s;
+	cursor: pointer;
 }
 
 ul li button:hover {
 	border-color: var(--clr);
 	filter: drop-shadow(0 0 60px var(--clr));
-	letter-spacing: 8px;
+	letter-spacing: 10px;
+	color: var(--clr);
 }
 
 ul li button::before {

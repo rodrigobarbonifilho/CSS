@@ -1,5 +1,5 @@
 {
-  "show": false,
+  "show": true,
   "description": "Uma pequena descrição",
-  "usedTecnologies": ["html", "css", "js"]
+  "usedTecnologies": ["html", "css"]
 }

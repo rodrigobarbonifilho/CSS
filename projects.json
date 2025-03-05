@@ -1,82 +1,100 @@
 {
-  "animated-service-section-card-ui-design": {
-    "show": false,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "animation-registration": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["css", "js"]
-  },
-  "menu-hover-effects": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "modern-glowing-effect": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "calculator": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "form-claymorphism": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "focus-letter": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "card-hover-effects": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "social-medias": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "gradient-circle-text-animation": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "icon-hover-effects": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "magic-line-web-social-icons": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "navigation-tabs": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "custom-range-slider": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "soap-bubble-animation": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  },
-  "water-drop": {
-    "show": true,
-    "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
-  }
+  "projects": [
+    {
+      "name": "animated-service-section-card-ui-design",
+      "show": false,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "animation-registration",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["css", "js"]
+    },
+    {
+      "name": "menu-hover-effects",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "modern-glowing-effect",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "calculator",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "form-claymorphism",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "focus-letter",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "card-hover-effects",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "social-medias",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "gradient-circle-text-animation",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "icon-hover-effects",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "magic-line-web-social-icons",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "navigation-tabs",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "custom-range-slider",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "soap-bubble-animation",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    },
+    {
+      "name": "water-drop",
+      "show": true,
+      "desc": "Uma pequena descrição",
+      "usedTecnologies": ["html", "css", "js"]
+    }
+  ]
 }

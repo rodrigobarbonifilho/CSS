@@ -1,13 +1,13 @@
 {
   "animated-service-section-card-ui-design": {
-    "show": true,
+    "show": false,
     "desc": "Uma pequena descrição",
     "usedTecnologies": ["html", "css", "js"]
   },
   "animation-registration": {
     "show": true,
     "desc": "Uma pequena descrição",
-    "usedTecnologies": ["html", "css", "js"]
+    "usedTecnologies": ["css", "js"]
   },
   "menu-hover-effects": {
     "show": true,
